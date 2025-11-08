@@ -1,0 +1,41 @@
+[
+  {
+    "id": "img-1",
+    "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
+    "alt": "Cinematic neon city street",
+    "prompt": "ultra-detailed cinematic neon city street at night, wet asphalt reflections, soft fog, anamorphic glow, 35mm, deep blues and purples, cyberpunk yet elegant",
+    "model": "Midjourney v6",
+    "seed": 123456,
+    "aspect": "16:9",
+    "steps": 50,
+    "date": "2024-07-03",
+    "tags": ["cinematic", "neon", "city", "night"],
+    "download": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2000&auto=format&fit=crop"
+  },
+  {
+    "id": "img-2",
+    "src": "https://images.unsplash.com/photo-1520975922284-65f93b31bf86?q=80&w=1200&auto=format&fit=crop",
+    "alt": "Portrait with neon rim light",
+    "prompt": "dramatic portrait of a young creator, neon rim light, soft key light, shallow depth of field, kodak portra colors, tasteful bokeh",
+    "model": "Stable Diffusion XL",
+    "seed": 99812,
+    "aspect": "4:5",
+    "steps": 30,
+    "date": "2024-06-18",
+    "tags": ["portrait", "neon", "bokeh"],
+    "download": "https://images.unsplash.com/photo-1520975922284-65f93b31bf86?q=80&w=2000&auto=format&fit=crop"
+  },
+  {
+    "id": "img-3",
+    "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
+    "alt": "Abstract gradient waves",
+    "prompt": "minimal abstract gradient waves, flowing silky shapes, neon blue and royal purple, soft grain, high gloss, premium feel",
+    "model": "Gemini Image",
+    "seed": 44221,
+    "aspect": "3:2",
+    "steps": 40,
+    "date": "2024-05-27",
+    "tags": ["abstract", "gradient", "minimal"],
+    "download": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2000&auto=format&fit=crop"
+  }
+]

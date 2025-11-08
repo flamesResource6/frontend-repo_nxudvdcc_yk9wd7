@@ -1,28 +1,57 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function ScrollProgress() {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      setProgress(scrolled);
+    };
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
-      </div>
+    <div className="fixed inset-x-0 top-0 z-50 h-1 bg-transparent">
+      <div className="h-full bg-gradient-to-r from-blue-600 to-purple-600 shadow-[0_0_20px_rgba(96,165,250,0.6)]" style={{ width: `${Math.min(100, progress * 100)}%` }} />
     </div>
-  )
+  );
 }
 
-export default App
+export default function App() {
+  useEffect(() => {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      <ScrollProgress />
+      <Header />
+      <main className="relative">
+        <Hero />
+        <About />
+        <Projects />
+        <Gallery />
+        <Contact />
+      </main>
+      <footer className="mx-auto max-w-6xl px-6 py-10 text-sm text-blue-200/70">
+        <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+          <p>© {new Date().getFullYear()} Aryan Dev</p>
+          <div className="flex items-center gap-4">
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#projects" className="hover:text-white">Projects</a>
+            <a href="#gallery" className="hover:text-white">AI Gallery</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

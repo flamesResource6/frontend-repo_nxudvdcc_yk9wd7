@@ -1,0 +1,50 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Neon Commerce",
+    "description": "A cinematic e-commerce experience with 3D product reveals and neon theming.",
+    "thumbnail": "https://images.unsplash.com/photo-1605649487212-47bdab064df3?q=80&w=1200&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1605649487212-47bdab064df3?q=80&w=1400&auto=format&fit=crop"
+    ],
+    "tech": ["Next.js", "Three.js", "Stripe"],
+    "caseStudy": {
+      "problem": "Create an immersive shopping flow with minimal friction and standout visuals.",
+      "solution": "Engineered a fast, responsive UI with 3D interactions and GPU-friendly glow effects.",
+      "role": "Design, Frontend, Integrations"
+    },
+    "link": "https://example.com/neon-commerce"
+  },
+  {
+    "id": "proj-2",
+    "title": "Aurora Portfolio",
+    "description": "A personal site template focused on parallax, glassmorphism, and smooth typography.",
+    "thumbnail": "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1400&auto=format&fit=crop"
+    ],
+    "tech": ["Vite", "Tailwind", "Framer Motion"],
+    "caseStudy": {
+      "problem": "Deliver polish and performance across devices without heavy dependencies.",
+      "solution": "Leveraged GPU-accelerated transforms, lazy loading, and granular animation control.",
+      "role": "Design & Frontend"
+    },
+    "link": "https://example.com/aurora-portfolio"
+  },
+  {
+    "id": "proj-3",
+    "title": "Harmonia AI",
+    "description": "A playful AI playground for sound-reactive visuals and generative loops.",
+    "thumbnail": "https://images.unsplash.com/photo-1601935111741-a3ce30b244fa?q=80&w=1200&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1601935111741-a3ce30b244fa?q=80&w=1400&auto=format&fit=crop"
+    ],
+    "tech": ["React", "WebAudio", "Canvas"],
+    "caseStudy": {
+      "problem": "Fuse audio analysis with responsive visual art in the browser.",
+      "solution": "Implemented performant shaders and decoupled UI from render loop.",
+      "role": "Frontend & Creative Coding"
+    },
+    "link": "https://example.com/harmonia-ai"
+  }
+]
